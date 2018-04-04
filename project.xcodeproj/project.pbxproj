@@ -14,6 +14,12 @@
 		3FB2C4F2207401EB00CF6463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB2C4F0207401EB00CF6463 /* LaunchScreen.storyboard */; };
 		3FB2C4FD207401EB00CF6463 /* projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C4FC207401EB00CF6463 /* projectTests.swift */; };
 		3FB2C508207401EB00CF6463 /* projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C507207401EB00CF6463 /* projectUITests.swift */; };
+		3FB2C5162074143B00CF6463 /* GroceryStoreListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C5152074143B00CF6463 /* GroceryStoreListTableViewController.swift */; };
+		3FB2C518207418A500CF6463 /* AddStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C517207418A500CF6463 /* AddStoreTableViewController.swift */; };
+		3FB2C51A2074194300CF6463 /* PickStoreImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C5192074194300CF6463 /* PickStoreImageTableViewController.swift */; };
+		3FB2C53C2074352F00CF6463 /* Datamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C53A2074352F00CF6463 /* Datamodel.xcdatamodeld */; };
+		3FB2C5442074398200CF6463 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C5422074398200CF6463 /* Store+CoreDataClass.swift */; };
+		3FB2C5452074398200CF6463 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C5432074398200CF6463 /* Store+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		3FB2C503207401EB00CF6463 /* projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB2C507207401EB00CF6463 /* projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectUITests.swift; sourceTree = "<group>"; };
 		3FB2C509207401EB00CF6463 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB2C5152074143B00CF6463 /* GroceryStoreListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryStoreListTableViewController.swift; sourceTree = "<group>"; };
+		3FB2C517207418A500CF6463 /* AddStoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoreTableViewController.swift; sourceTree = "<group>"; };
+		3FB2C5192074194300CF6463 /* PickStoreImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickStoreImageTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		3FB2C53B2074352F00CF6463 /* Datamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Datamodel.xcdatamodel; sourceTree = "<group>"; };
+		3FB2C5422074398200CF6463 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3FB2C5432074398200CF6463 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +109,13 @@
 		3FB2C4E6207401EB00CF6463 /* project */ = {
 			isa = PBXGroup;
 			children = (
+				3FB2C541207435C400CF6463 /* Datamodel */,
 				3FB2C4E7207401EB00CF6463 /* AppDelegate.swift */,
 				3FB2C4E9207401EB00CF6463 /* ViewController.swift */,
 				3FB2C4EB207401EB00CF6463 /* Main.storyboard */,
+				3FB2C5192074194300CF6463 /* PickStoreImageTableViewController.swift */,
+				3FB2C517207418A500CF6463 /* AddStoreTableViewController.swift */,
+				3FB2C5152074143B00CF6463 /* GroceryStoreListTableViewController.swift */,
 				3FB2C4EE207401EB00CF6463 /* Assets.xcassets */,
 				3FB2C4F0207401EB00CF6463 /* LaunchScreen.storyboard */,
 				3FB2C4F3207401EB00CF6463 /* Info.plist */,
@@ -123,6 +139,17 @@
 				3FB2C509207401EB00CF6463 /* Info.plist */,
 			);
 			path = projectUITests;
+			sourceTree = "<group>";
+		};
+		3FB2C541207435C400CF6463 /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2C5432074398200CF6463 /* Store+CoreDataProperties.swift */,
+				3FB2C5422074398200CF6463 /* Store+CoreDataClass.swift */,
+				3FB2C53A2074352F00CF6463 /* Datamodel.xcdatamodeld */,
+			);
+			name = Datamodel;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB2C4EA207401EB00CF6463 /* ViewController.swift in Sources */,
+				3FB2C5452074398200CF6463 /* Store+CoreDataProperties.swift in Sources */,
+				3FB2C53C2074352F00CF6463 /* Datamodel.xcdatamodeld in Sources */,
+				3FB2C51A2074194300CF6463 /* PickStoreImageTableViewController.swift in Sources */,
 				3FB2C4E8207401EB00CF6463 /* AppDelegate.swift in Sources */,
+				3FB2C5162074143B00CF6463 /* GroceryStoreListTableViewController.swift in Sources */,
+				3FB2C5442074398200CF6463 /* Store+CoreDataClass.swift in Sources */,
+				3FB2C518207418A500CF6463 /* AddStoreTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +585,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FB2C53A2074352F00CF6463 /* Datamodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FB2C53B2074352F00CF6463 /* Datamodel.xcdatamodel */,
+			);
+			currentVersion = 3FB2C53B2074352F00CF6463 /* Datamodel.xcdatamodel */;
+			path = Datamodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FB2C4DC207401EB00CF6463 /* Project object */;
 }
