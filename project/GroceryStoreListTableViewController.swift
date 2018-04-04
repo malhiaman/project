@@ -15,6 +15,7 @@ class GroceryStoreListTableViewController: UITableViewController, AddSroreVCDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.backgroundColor = UIColor.lightGray
         let fetchRequest = NSFetchRequest<Store>(entityName: "Store")
         do {
             grocerylist = try managedObjectContext.fetch(fetchRequest)
@@ -43,10 +44,16 @@ class GroceryStoreListTableViewController: UITableViewController, AddSroreVCDele
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
+        
         // Configure the cell...
-        cell.textLabel?.text = grocerylist[indexPath.row].locName
-        cell.detailTextLabel?.text = grocerylist[indexPath.row].loc
+        //cell.textLabel?.text = grocerylist[indexPath.row].locName
+        //cell.detailTextLabel?.text = grocerylist[indexPath.row].loc
+        let label = cell.viewWithTag(102) as! UILabel
+        label.text = grocerylist[indexPath.row].locName
+        let storeIconName = grocerylist[indexPath.row].imagePick
+        let imageView = cell.viewWithTag(101) as! UIImageView
+        imageView.image = UIImage(named: storeIconName!)
+
 
 
         return cell

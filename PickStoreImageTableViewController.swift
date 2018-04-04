@@ -9,7 +9,7 @@
 import UIKit
 
 protocol PickStoreIconVCDelegate: class {
-    func pickIcon(_ controller: PickStoreImageTableViewController, didPick imagePic: String)
+    func pickIcon(_ controller: PickStoreImageTableViewController, didPick imagePick: String)
 }
 
 
@@ -20,7 +20,7 @@ class PickStoreImageTableViewController: UITableViewController {
 weak var delegate: PickStoreIconVCDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+self.tableView.backgroundColor = UIColor.lightGray
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -47,8 +47,14 @@ weak var delegate: PickStoreIconVCDelegate?
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PickStore", for: indexPath)
+        if (indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.cyan
+        }
+        else
+        {
+            cell.backgroundColor = UIColor.lightGray
+        }
         // Configure the cell...
         cell.textLabel?.text = pickimage[indexPath.row]
         cell.imageView?.image = UIImage(named:pickimage[indexPath.row])

@@ -20,6 +20,7 @@ class AddStoreTableViewController: UITableViewController, PickStoreIconVCDelegat
     var managedObjectContext: NSManagedObjectContext!
      weak var delegate: AddSroreVCDelegate?
 
+    @IBOutlet var datePickerCell: UITableViewCell!
     @IBOutlet weak var nameofStore: UITextField!
     
     @IBOutlet weak var location: UITextField!
@@ -41,10 +42,12 @@ class AddStoreTableViewController: UITableViewController, PickStoreIconVCDelegat
     @IBAction func done(_ sender: UIBarButtonItem) {
       
         
-        
+        if !editPlace {
         store  = Store(context: managedObjectContext)
+        }
         store!.locName = nameofStore.text
         store!.loc = location.text
+      
         if let icon = storeIconName {
             store!.imagePick = icon
         }
@@ -63,7 +66,7 @@ class AddStoreTableViewController: UITableViewController, PickStoreIconVCDelegat
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+self.tableView.backgroundColor = UIColor.lightGray
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -87,25 +90,27 @@ class AddStoreTableViewController: UITableViewController, PickStoreIconVCDelegat
         // #warning Incomplete implementation, return the number of rows
         return 7
     }
-    func pickIcon(_ controller: PickStoreImageTableViewController, didPick imagePic: String) {
-        self.storeIconName = imagePic
+    func pickIcon(_ controller: PickStoreImageTableViewController, didPick imagePick: String) {
+        self.storeIconName = imagePick
         pickImage.image = UIImage(named: storeIconName!)
         navigationController?.popViewController(animated: true)
-        
-        
-        
-        
     }
-
-    /*
+    
+    
+    @IBAction func switchtoggle(_ sender: UISwitch) {
+    }
+    
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if indexPath.row == 8 {
+            return datePickerCell
+        }
+        
+        return super.tableView(tableView, cellForRowAt: indexPath)
+        
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -142,14 +147,16 @@ class AddStoreTableViewController: UITableViewController, PickStoreIconVCDelegat
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let controller = segue.destination as! PickStoreImageTableViewController
+        controller.delegate = self
     }
-    */
+  
+    
+    
 
 }
