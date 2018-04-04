@@ -2,7 +2,7 @@
 //  GroceryStoreListTableViewController.swift
 //  project
 //
-//  Created by Student on 2018-04-03.
+//  Created by Amandeep on 2018-04-03.
 //  Copyright © 2018 Student. All rights reserved.
 //
 
@@ -68,17 +68,18 @@ class GroceryStoreListTableViewController: UITableViewController, AddSroreVCDele
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            grocerylist.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

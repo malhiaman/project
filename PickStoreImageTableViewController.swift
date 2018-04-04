@@ -2,7 +2,7 @@
 //  PickStoreImageTableViewController.swift
 //  project
 //
-//  Created by Student on 2018-04-03.
+//  Created by Amandeep Kaur on 2018-04-03.
 //  Copyright © 2018 Student. All rights reserved.
 //
 

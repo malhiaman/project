@@ -20,6 +20,7 @@
 		3FB2C53C2074352F00CF6463 /* Datamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C53A2074352F00CF6463 /* Datamodel.xcdatamodeld */; };
 		3FB2C5442074398200CF6463 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C5422074398200CF6463 /* Store+CoreDataClass.swift */; };
 		3FB2C5452074398200CF6463 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2C5432074398200CF6463 /* Store+CoreDataProperties.swift */; };
+		3FD7C36D207546EA0036D8BD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7C36C207546EA0036D8BD /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3FB2C53B2074352F00CF6463 /* Datamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Datamodel.xcdatamodel; sourceTree = "<group>"; };
 		3FB2C5422074398200CF6463 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3FB2C5432074398200CF6463 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3FD7C36C207546EA0036D8BD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				3FB2C4E7207401EB00CF6463 /* AppDelegate.swift */,
 				3FB2C4E9207401EB00CF6463 /* ViewController.swift */,
 				3FB2C4EB207401EB00CF6463 /* Main.storyboard */,
+				3FD7C36C207546EA0036D8BD /* MapViewController.swift */,
 				3FB2C5192074194300CF6463 /* PickStoreImageTableViewController.swift */,
 				3FB2C517207418A500CF6463 /* AddStoreTableViewController.swift */,
 				3FB2C5152074143B00CF6463 /* GroceryStoreListTableViewController.swift */,
@@ -290,6 +293,7 @@
 				3FB2C5452074398200CF6463 /* Store+CoreDataProperties.swift in Sources */,
 				3FB2C53C2074352F00CF6463 /* Datamodel.xcdatamodeld in Sources */,
 				3FB2C51A2074194300CF6463 /* PickStoreImageTableViewController.swift in Sources */,
+				3FD7C36D207546EA0036D8BD /* MapViewController.swift in Sources */,
 				3FB2C4E8207401EB00CF6463 /* AppDelegate.swift in Sources */,
 				3FB2C5162074143B00CF6463 /* GroceryStoreListTableViewController.swift in Sources */,
 				3FB2C5442074398200CF6463 /* Store+CoreDataClass.swift in Sources */,
